@@ -77,7 +77,7 @@ $app->middleware([
 ]);
 
 // $app->routeMiddleware([
-//     'auth' => App\Http\Middleware\Authenticate::class,
+//     'auth' => App\Api\Middleware\Authenticate::class,
 // ]);
 
 /*
@@ -112,7 +112,7 @@ $app->register(Barryvdh\Cors\ServiceProvider::class);
 */
 
 $app->router->group([
-    'namespace' => 'App\Http\Controllers',
+    'namespace' => 'App\Api\Controllers',
 ], function ($router) {
     require __DIR__.'/../routes/api.php';
 });
