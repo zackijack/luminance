@@ -13,7 +13,7 @@ return [
 
     'supportsCredentials' => false,
     'allowedOrigins' => ['localhost'],
-    'allowedOriginsPatterns' => ['/localhost:\d/'],
+    'allowedOriginsPatterns' => ['/localhost:\d+/'],
     'allowedHeaders' => ['*'],
     'allowedMethods' => ['GET'],
     'exposedHeaders' => [],
