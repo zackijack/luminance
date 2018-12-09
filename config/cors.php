@@ -6,16 +6,16 @@ return [
     | Laravel CORS
     |--------------------------------------------------------------------------
     |
-    | allowedOrigins, allowedHeaders and allowedMethods can be set to array('*')
+    | allowedOrigins, allowedHeaders and allowedMethods can be set to ['*']
     | to accept any value.
     |
     */
 
     'supportsCredentials' => false,
-    'allowedOrigins' => ['*'],
-    'allowedOriginsPatterns' => [],
+    'allowedOrigins' => ['localhost'],
+    'allowedOriginsPatterns' => ['/localhost:\d/'],
     'allowedHeaders' => ['*'],
-    'allowedMethods' => ['*'],
+    'allowedMethods' => ['GET'],
     'exposedHeaders' => [],
     'maxAge' => 0,
 ];
