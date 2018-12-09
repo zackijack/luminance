@@ -1,6 +1,6 @@
 <?php
 
-if (!function_exists('object_to_array')) {
+if (! function_exists('object_to_array')) {
     /**
      * Convert stdClass object to array.
      *

@@ -2,12 +2,12 @@
 
 namespace App\Api\Controllers\V1;
 
-use App\Api\Controllers\Controller;
 use App\Response;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Facades\Cache;
+use App\Api\Controllers\Controller;
 use GuzzleHttp\Client as HttpClient;
+use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\Validator;
 use Dingo\Api\Exception\ResourceException;
 
 class ExampleController extends Controller
@@ -36,7 +36,7 @@ class ExampleController extends Controller
 
         $result = Cache::get('example:request:text:'.$request->text);
 
-        if (!$result) {
+        if (! $result) {
             $get = $this->http->get('anything', [
                 'query' => [
                     'text' => $request->text,
