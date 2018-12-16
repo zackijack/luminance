@@ -1,1 +1,9 @@
 preset: laravel
+
+enabled:
+  - blank_line_before_throw
+  - blank_line_before_try
+  - new_with_braces
+  - no_spaces_outside_offset
+  - phpdoc_order
+  - phpdoc_separation
