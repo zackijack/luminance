@@ -5,6 +5,7 @@ if (! function_exists('object_to_array')) {
      * Convert stdClass object to array.
      *
      * @param object|array $data
+     *
      * @return array
      */
     function object_to_array($data)
